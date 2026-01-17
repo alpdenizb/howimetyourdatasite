@@ -8,14 +8,15 @@
 
 ## Data
 The analysis is based on the **2015 U.S. Flight Delays and Cancellations** dataset.
+* **Source:** [Kaggle - 2015 Flight Delays and Cancellations](https://www.kaggle.com/datasets/usdot/flight-delays)
 * **Dataset Size:** Contains over 5.8 million flight records (approx. 600MB).
-* **Access Method:** Due to GitHub's file size limitations, the `Data/` folder contains only a **sample version** (100 rows) of the dataset. However, the project scripts (`Scripts/`) are designed to automatically fetch the full dataset via the `kagglehub` library during execution to ensure a complete and accurate analysis.
+* **Access & Storage:** Due to the large file size, the dataset is managed and uploaded using **Git LFS (Large File Storage)** to ensure version control and repository efficiency. Additionally, the project scripts utilize the **kagglehub** library for seamless data acquisition and management during the analysis.
 
 ## Research Questions
 Our project investigates three primary research questions:
 
-1. **RQ1 - The "Snowball Effect":** We examine how minor disruptions early in a flight's daily rotation compound and escalate into significant delays by the end of the day, specifically focusing on the 30-90 minute delay interval.
-2. **RQ2 - Peak Hour Bottlenecks:** We identify critical operational bottlenecks by mapping flight density across different days of the week and specific time windows using hexagonal binning.
+1. **RQ1 - The "Snowball Effect":** We examine how minor disruptions early in a flight's daily rotation compound and escalate into significant delays by the end of the day.
+2. 2. **RQ2 - Temporal Bottlenecks and Monthly Congestion:** This analysis identifies critical operational bottlenecks through a dual-visualization strategy. A **static jointplot** utilizes hexagonal binning to map flight density across days and hours, pinpointing specific "rush hour" windows. This is further enriched by an **interactive bin plot** (dashboard) that monitors monthly congestion patterns across 10 major airline hubs, signaling when flight volumes surpass safety thresholds. By combining high-resolution daily mapping with broad monthly trends, this approach enables more flexible scheduling and data-driven resource allocation.
 3. **RQ3 - Arrival Delay Prediction:** We analyze the impact of departure delays, taxi-out times, and flight distances on final arrival punctuality to quantify how delays at the gate translate to the final arrival time.
 
 ## Our Models
