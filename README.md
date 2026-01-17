@@ -1,12 +1,10 @@
 # IE 421 - US Flight Data Analysis
 
-This project analyzes operational inefficiencies, delay propagation, and air traffic congestion within the aviation sector using US flight data from 2015.
-
-## Team Members
-* **Group Name:** How I Met Your Data
-* [Member Name 1]
-* [Member Name 2]
-* [Member Name 3]
+## Team Members-How I Met Your Data
+* [Alp Deniz Batuhan] 123203096
+* [Emir Buğra Çakır] 123203102
+* [Beste Eren] 122203049
+* [Tuana Şen] 122203052
 
 ## Data
 The analysis is based on the **2015 U.S. Flight Delays and Cancellations** dataset.
