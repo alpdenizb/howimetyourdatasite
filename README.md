@@ -13,11 +13,12 @@ The analysis is based on the **2015 U.S. Flight Delays and Cancellations** datas
 * **Access & Storage:** Due to the large file size, the dataset is managed and uploaded using **Git LFS (Large File Storage)** to ensure version control and repository efficiency. Additionally, the project scripts utilize the **kagglehub** library for seamless data acquisition and management during the analysis.
 
 ## Research Questions
-Our project investigates three primary research questions:
 
-**RQ1 - The "Snowball Effect":** We examine how minor disruptions early in a flight's daily rotation compound and escalate into significant delays by the end of the day.
-2. **RQ2 - Temporal Bottlenecks and Monthly Congestion:** This analysis identifies operational bottlenecks through a dual-visualization approach, integrating a static jointplot for daily rush-hour mapping with an interactive bin plot for monthly hub monitoring. While the jointplot utilizes hexagonal binning to pinpoint high-density traffic windows, the interactive dashboard tracks when flight volumes surpass safety thresholds across 10 major airports. Together, these tools provide a comprehensive temporal framework to optimize scheduling and mitigate systemic congestion.
-**RQ3 - Arrival Delay Prediction:** We analyze the impact of departure delays, taxi-out times, and flight distances on final arrival punctuality to quantify how delays at the gate translate to the final arrival time.
+1. **RQ1 - The "Snowball Effect":** This analysis investigates the "Snowball Effect," demonstrating how flight delays compound as an aircraft completes multiple segments throughout its daily rotation. Focusing on a specific 30-90 minute delay interval, we quantify how early-day disruptions escalate into significant cumulative delays by the end of the schedule.
+
+2. **RQ2 - Temporal Bottlenecks and Monthly Congestion:** This study identifies operational bottlenecks through a dual-visualization approach, integrating a static jointplot for daily rush-hour mapping with an interactive bin plot for monthly hub monitoring. While the jointplot utilizes hexagonal binning to pinpoint high-density traffic windows, the interactive dashboard tracks when flight volumes surpass safety thresholds across 10 major airports. Together, these tools provide a comprehensive temporal framework to optimize scheduling and mitigate systemic congestion.
+
+3. **RQ3 - Arrival Delay Prediction:** Utilizing a Multiple Linear Regression (OLS) model, this analysis quantifies the impact of departure delays, taxi-out times, and flight distances on arrival punctuality. Achieving a high R-squared value of 0.926, the model demonstrates that arrival delays are highly predictable based on early-stage departure metrics, with departure delay serving as the strongest indicator of the final arrival time.
 
 ## Our Models
 We utilized both descriptive and predictive modeling techniques to extract insights:
