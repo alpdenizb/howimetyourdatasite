@@ -22,7 +22,7 @@ The analysis is based on the **2015 U.S. Flight Delays and Cancellations** datas
 
 ## Our Models
 We utilized both descriptive and predictive modeling techniques to extract insights:
-* **Descriptive Models:** **Hexagonal Binning (Jointplots)**,**Bin Plot** and **Heatmap** analyses were implemented to visualize operational intensity and the propagation of the "Snowball Effect."
+* **Descriptive Models:** **Hexagonal Binning (Jointplots)**, **Bin Plot** and **Heatmap** analyses were implemented to visualize operational intensity and the propagation of the "Snowball Effect."
 * **Predictive Model:** A **Multiple Linear Regression (OLS)** model was constructed to forecast arrival delays. Our model achieved a high **R-squared value of 0.926**, demonstrating strong predictive power regarding schedule deviations.
 
 ## Website link
