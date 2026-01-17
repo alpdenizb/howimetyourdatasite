@@ -15,9 +15,9 @@ The analysis is based on the **2015 U.S. Flight Delays and Cancellations** datas
 ## Research Questions
 Our project investigates three primary research questions:
 
-1. **RQ1 - The "Snowball Effect":** We examine how minor disruptions early in a flight's daily rotation compound and escalate into significant delays by the end of the day.
-2. 2. **RQ2 - Temporal Bottlenecks and Monthly Congestion:** This analysis identifies critical operational bottlenecks through a dual-visualization strategy. A **static jointplot** utilizes hexagonal binning to map flight density across days and hours, pinpointing specific "rush hour" windows. This is further enriched by an **interactive bin plot** (dashboard) that monitors monthly congestion patterns across 10 major airline hubs, signaling when flight volumes surpass safety thresholds. By combining high-resolution daily mapping with broad monthly trends, this approach enables more flexible scheduling and data-driven resource allocation.
-3. **RQ3 - Arrival Delay Prediction:** We analyze the impact of departure delays, taxi-out times, and flight distances on final arrival punctuality to quantify how delays at the gate translate to the final arrival time.
+**RQ1 - The "Snowball Effect":** We examine how minor disruptions early in a flight's daily rotation compound and escalate into significant delays by the end of the day.
+2. **RQ2 - Temporal Bottlenecks and Monthly Congestion:** This analysis identifies operational bottlenecks through a dual-visualization approach, integrating a static jointplot for daily rush-hour mapping with an interactive bin plot for monthly hub monitoring. While the jointplot utilizes hexagonal binning to pinpoint high-density traffic windows, the interactive dashboard tracks when flight volumes surpass safety thresholds across 10 major airports. Together, these tools provide a comprehensive temporal framework to optimize scheduling and mitigate systemic congestion.
+**RQ3 - Arrival Delay Prediction:** We analyze the impact of departure delays, taxi-out times, and flight distances on final arrival punctuality to quantify how delays at the gate translate to the final arrival time.
 
 ## Our Models
 We utilized both descriptive and predictive modeling techniques to extract insights:
